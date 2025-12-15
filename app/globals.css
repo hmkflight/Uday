@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Design system typography defaults */
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-sand text-charcoal;
+    font-family: var(--font-source-serif), Georgia, serif;
+  }
+
+  /* Keep sans-serif for UI elements */
+  button,
+  .btn-ui {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+
+  /* Respect user motion preferences */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* Typography scale - mobile first */
+  .text-h1 {
+    font-family: var(--font-source-serif), Georgia, serif;
+    font-size: 32px;
+    line-height: 1.2;
+    font-weight: 600;
+  }
+
+  .text-h2 {
+    font-family: var(--font-source-serif), Georgia, serif;
+    font-size: 24px;
+    line-height: 1.3;
+    font-weight: 600;
+  }
+
+  .text-h3 {
+    font-family: var(--font-source-serif), Georgia, serif;
+    font-size: 18px;
+    line-height: 1.4;
+    font-weight: 600;
+  }
+
+  .text-body {
+    font-family: var(--font-source-serif), Georgia, serif;
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 400;
+  }
+
+  .text-small {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+
+  /* Desktop typography overrides */
+  @media (min-width: 769px) {
+    .text-h1 {
+      font-size: 48px;
+    }
+
+    .text-h2 {
+      font-size: 32px;
+    }
+
+    .text-h3 {
+      font-size: 20px;
+    }
+
+    .text-body {
+      font-size: 18px;
+    }
+
+    .text-small {
+      font-size: 15px;
+    }
+  }
+}
