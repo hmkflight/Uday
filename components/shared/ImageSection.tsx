@@ -3,6 +3,7 @@ import React from "react";
 interface ImageSectionProps {
   backgroundImage: string;
   overlayOpacity?: number;
+  overlayColor?: "dark" | "warm";
   children: React.ReactNode;
   className?: string;
   id?: string;
@@ -11,10 +12,13 @@ interface ImageSectionProps {
 export default function ImageSection({
   backgroundImage,
   overlayOpacity = 0.5,
+  overlayColor = "dark",
   children,
   className = "",
   id,
 }: ImageSectionProps) {
+  const overlayClass = overlayColor === "dark" ? "bg-charcoal" : "bg-sand";
+
   return (
     <section
       id={id}
@@ -26,9 +30,9 @@ export default function ImageSection({
         backgroundRepeat: "no-repeat",
       }}
     >
-      {/* Warm overlay for readability */}
+      {/* Overlay for readability */}
       <div
-        className="absolute inset-0 bg-sand"
+        className={`absolute inset-0 ${overlayClass}`}
         style={{ opacity: overlayOpacity }}
         aria-hidden="true"
       />

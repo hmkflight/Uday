@@ -7,43 +7,34 @@ export default function Hero() {
   return (
     <ImageSection
       backgroundImage="/images/istockphoto-177521471-612x612.jpg"
-      overlayOpacity={0.3}
+      overlayOpacity={0.45}
+      overlayColor="dark"
     >
-      <div className="py-24 md:py-40">
+      <div className="py-20 md:py-32">
         <Container>
           {/* Logo */}
-          <div className="text-center mb-8 md:mb-12">
+          <div className="text-center mb-10 md:mb-14">
             <img
               src="/images/ChatGPT Image Dec 15, 2025, 01_26_50 AM.png"
               alt="Coastal Monks Logo"
-              className="mx-auto h-24 md:h-32 w-auto"
+              className="mx-auto h-20 md:h-28 w-auto"
               style={{
-                filter: 'drop-shadow(0 0 15px rgba(82, 160, 150, 0.4)) drop-shadow(0 0 30px rgba(82, 160, 150, 0.2))'
+                filter: 'drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3))'
               }}
             />
           </div>
 
           {/* Main headline and subheadline */}
-          <div className="max-w-4xl mx-auto text-center mb-20">
-            <h1
-              className="text-[40px] md:text-[64px] mb-8 text-white font-light tracking-wide leading-tight"
-              style={{
-                textShadow: '0 0 20px rgba(82, 160, 150, 0.6), 0 0 40px rgba(82, 160, 150, 0.4), 2px 2px 4px rgba(0, 0, 0, 0.3)'
-              }}
-            >
+          <div className="max-w-3xl mx-auto text-center mb-16 md:mb-20">
+            <h1 className="text-[36px] md:text-[52px] mb-4 text-white font-semibold leading-tight">
               A coastal community for second chances
             </h1>
-            <p
-              className="text-[20px] md:text-[24px] mb-14 text-white font-light leading-relaxed"
-              style={{
-                textShadow: '0 0 15px rgba(82, 160, 150, 0.5), 0 0 30px rgba(82, 160, 150, 0.3), 1px 1px 3px rgba(0, 0, 0, 0.3)'
-              }}
-            >
+            <p className="text-[18px] md:text-[22px] mb-12 text-white font-normal opacity-90 leading-relaxed max-w-2xl mx-auto">
               Uday, One Simple Wish, and Rescue Mission together in one home—bringing hope, dignity, and opportunity to people who need it most.
             </p>
 
             {/* CTAs */}
-            <div className="flex flex-col sm:flex-row gap-6 justify-center mb-10">
+            <div className="flex flex-col sm:flex-row gap-5 justify-center mb-8">
               <Button variant="primary" href="#help">
                 See how you can help
               </Button>
@@ -53,45 +44,25 @@ export default function Hero() {
             </div>
 
             {/* Support line */}
-            <p
-              className="text-[16px] md:text-[18px] text-white opacity-95 font-light leading-relaxed"
-              style={{
-                textShadow: '0 0 12px rgba(82, 160, 150, 0.4), 0 0 24px rgba(82, 160, 150, 0.2), 1px 1px 2px rgba(0, 0, 0, 0.3)'
-              }}
-            >
+            <p className="text-[15px] md:text-[17px] text-white opacity-80 font-normal leading-relaxed">
               Where a personal story, children's wishes, and recovery journeys meet the California coast.
             </p>
           </div>
 
           {/* Stats strip */}
-          <div className="grid grid-cols-3 gap-8 md:gap-12 max-w-4xl mx-auto pt-12 border-t border-white border-opacity-30">
+          <div className="grid grid-cols-3 gap-6 md:gap-10 max-w-3xl mx-auto pt-10 border-t border-white border-opacity-25">
             <div className="text-center">
-              <p
-                className="text-[15px] md:text-[17px] text-white font-light leading-relaxed"
-                style={{
-                  textShadow: '0 0 10px rgba(82, 160, 150, 0.4), 0 0 20px rgba(82, 160, 150, 0.2), 1px 1px 2px rgba(0, 0, 0, 0.2)'
-                }}
-              >
+              <p className="text-[14px] md:text-[16px] text-white font-normal opacity-85 leading-relaxed">
                 100+ wishes supported
               </p>
             </div>
             <div className="text-center">
-              <p
-                className="text-[15px] md:text-[17px] text-white font-light leading-relaxed"
-                style={{
-                  textShadow: '0 0 10px rgba(82, 160, 150, 0.4), 0 0 20px rgba(82, 160, 150, 0.2), 1px 1px 2px rgba(0, 0, 0, 0.2)'
-                }}
-              >
+              <p className="text-[14px] md:text-[16px] text-white font-normal opacity-85 leading-relaxed">
                 1,000+ nights of shelter funded
               </p>
             </div>
             <div className="text-center">
-              <p
-                className="text-[15px] md:text-[17px] text-white font-light leading-relaxed"
-                style={{
-                  textShadow: '0 0 10px rgba(82, 160, 150, 0.4), 0 0 20px rgba(82, 160, 150, 0.2), 1px 1px 2px rgba(0, 0, 0, 0.2)'
-                }}
-              >
+              <p className="text-[14px] md:text-[16px] text-white font-normal opacity-85 leading-relaxed">
                 Coastal Monks: a growing circle of supporters
               </p>
             </div>

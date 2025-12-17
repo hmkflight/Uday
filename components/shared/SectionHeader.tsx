@@ -14,25 +14,22 @@ export default function SectionHeader({
   onImage = false,
 }: SectionHeaderProps) {
   const textColor = onImage ? "text-white" : "";
-  const introColor = onImage ? "text-white" : "text-warmGray";
-
-  const textShadowStyle = onImage
-    ? { textShadow: '0 0 15px rgba(82, 160, 150, 0.6), 0 0 30px rgba(82, 160, 150, 0.4), 2px 2px 4px rgba(0, 0, 0, 0.3)' }
-    : {};
+  const introColor = onImage ? "text-white opacity-90" : "text-warmGray";
+  const titleWeight = onImage ? "font-semibold" : "font-semibold";
 
   return (
     <div
-      className={`mb-16 md:mb-20 ${
+      className={`mb-12 md:mb-16 ${
         centered ? "text-center" : "text-left"
       }`}
     >
-      <h2 className={`text-h2 mb-4 leading-tight ${textColor}`} style={textShadowStyle}>
+      <h2 className={`text-h2 mb-4 leading-snug ${textColor} ${titleWeight}`}>
         {title}
       </h2>
       {intro && (
         <p
-          className={`text-body ${introColor} leading-relaxed max-w-2xl mx-auto`}
-          style={onImage ? { textShadow: '0 0 12px rgba(82, 160, 150, 0.5), 0 0 24px rgba(82, 160, 150, 0.3), 1px 1px 3px rgba(0, 0, 0, 0.3)' } : {}}
+          className={`text-body ${introColor} leading-relaxed max-w-2xl ${centered ? "mx-auto" : ""} font-normal`}
+          style={{ lineHeight: "1.7" }}
         >
           {intro}
         </p>

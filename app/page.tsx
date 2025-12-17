@@ -66,7 +66,8 @@ export default function Home() {
 
       <ImageSection
         backgroundImage="/images/beach.webp"
-        overlayOpacity={0.4}
+        overlayOpacity={0.45}
+        overlayColor="dark"
       >
         <div className="py-16 md:py-24">
           <Container maxWidth="content">
