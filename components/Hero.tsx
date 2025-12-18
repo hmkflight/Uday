@@ -13,11 +13,11 @@ export default function Hero() {
       <div className="py-20 md:py-32">
         <Container>
           {/* Logo */}
-          <div className="text-center mb-10 md:mb-14">
+          <div className="flex justify-center mb-10 md:mb-14">
             <img
-              src="/images/Logos.png"
+              src="/images/Logos-removebg-preview.png"
               alt="Coastal Monks Logo"
-              className="mx-auto h-20 md:h-28 w-auto"
+              className="h-24 md:h-32 w-auto"
               style={{
                 filter: 'drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3))'
               }}
