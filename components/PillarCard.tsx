@@ -10,6 +10,8 @@ interface PillarCardProps {
   linkHref?: string;
   buttonText?: string;
   buttonHref?: string;
+  buttonTarget?: string;
+  buttonRel?: string;
 }
 
 export default function PillarCard({
@@ -21,6 +23,8 @@ export default function PillarCard({
   linkHref = "#",
   buttonText,
   buttonHref = "#",
+  buttonTarget,
+  buttonRel,
 }: PillarCardProps) {
   return (
     <div className="bg-pureWhite rounded-xl p-9 shadow-[0_2px_16px_rgba(0,0,0,0.04)] hover:shadow-[0_4px_24px_rgba(0,0,0,0.06)] transition-shadow duration-300 border border-warmBeige border-opacity-40">
@@ -56,7 +60,7 @@ export default function PillarCard({
       )}
 
       {buttonText && (
-        <Button variant="primary" href={buttonHref}>
+        <Button variant="primary" href={buttonHref} target={buttonTarget} rel={buttonRel}>
           {buttonText}
         </Button>
       )}

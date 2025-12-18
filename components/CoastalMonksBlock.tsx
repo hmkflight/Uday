@@ -42,7 +42,7 @@ export default function CoastalMonksBlock() {
 
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-          <Button variant="primary" href="#join">
+          <Button variant="primary" href="mailto:me@uday.com">
             Join Coastal Monks
           </Button>
           <Button variant="secondary" href="#how-it-works">

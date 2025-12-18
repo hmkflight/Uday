@@ -2,12 +2,12 @@ import React from "react";
 import Container from "./shared/Container";
 
 export default function Footer() {
-  const navLinks = [
+  const navLinks: Array<{ label: string; href: string; target?: string; rel?: string }> = [
     { label: "Uday's Story", href: "#uday" },
-    { label: "One Simple Wish", href: "#one-simple-wish" },
-    { label: "Rescue Mission", href: "#rescue-mission" },
+    { label: "One Simple Wish", href: "https://www.onesimplewish.org/site/donate?utm_source=google&utm_medium=cpc&campaignid=23280953753&adgroupid=191784224591&creative=784857427865&matchtype=b&network=g&device=c&keyword=one%20simple%20wish&gad_source=1&gad_campaignid=23280953753&gbraid=0AAAAADyxxbyhSaYSFTpgHOD7iXt3_y6AJ&gclid=Cj0KCQiAxonKBhC1ARIsAIHq_lvRtDWZsu5hZ9FEySyK97zZO351HJXzhVFYaNr4NZ6ilpyJ0qmzQg8aAilgEALw_wcB", target: "_blank", rel: "noopener noreferrer" },
+    { label: "Rescue Mission", href: "https://www.rescuemission.org/", target: "_blank", rel: "noopener noreferrer" },
     { label: "Coastal Monks", href: "#coastal-monks" },
-    { label: "Contact", href: "#contact" },
+    { label: "Contact", href: "mailto:me@uday.com" },
   ];
 
   return (
@@ -26,6 +26,8 @@ export default function Footer() {
                 <a
                   href={link.href}
                   className="text-small text-charcoal hover:text-coastalTeal transition-colors duration-200 min-h-[44px] inline-flex items-center"
+                  target={link.target}
+                  rel={link.rel}
                 >
                   {link.label}
                 </a>
@@ -37,7 +39,9 @@ export default function Footer() {
         {/* LinkedIn button */}
         <div className="text-center">
           <a
-            href="#"
+            href="https://www.linkedin.com/in/udaygupta/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-small text-coastalTeal hover:text-opacity-80 transition-all duration-200 min-h-[44px] px-4 hover:scale-105"
             aria-label="Connect with Uday on LinkedIn"
           >

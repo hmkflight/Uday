@@ -6,6 +6,8 @@ interface ButtonProps {
   href?: string;
   onClick?: () => void;
   className?: string;
+  target?: string;
+  rel?: string;
 }
 
 export default function Button({
@@ -14,6 +16,8 @@ export default function Button({
   href = "#",
   onClick,
   className = "",
+  target,
+  rel,
 }: ButtonProps) {
   const baseStyles =
     "inline-block px-8 py-4 rounded-lg font-medium transition-all duration-300 text-center min-h-[44px] min-w-[44px] shadow-[0_2px_12px_rgba(0,0,0,0.04)] hover:shadow-[0_4px_20px_rgba(0,0,0,0.08)]" +
@@ -36,7 +40,7 @@ export default function Button({
   }
 
   return (
-    <a href={href} className={combinedStyles}>
+    <a href={href} className={combinedStyles} target={target} rel={rel}>
       {children}
     </a>
   );
