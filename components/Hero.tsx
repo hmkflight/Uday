@@ -15,7 +15,7 @@ export default function Hero() {
           {/* Logo */}
           <div className="text-center mb-10 md:mb-14">
             <img
-              src="/images/ChatGPT Image Dec 15, 2025, 01_26_50 AM.png"
+              src="/images/Logos.png"
               alt="Coastal Monks Logo"
               className="mx-auto h-20 md:h-28 w-auto"
               style={{
