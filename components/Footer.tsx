@@ -59,7 +59,7 @@ export default function Footer() {
 
         {/* Credit line */}
         <p className="hudson-credit">
-          Crafted by Hudson™ · <a href="mailto:hudsonmyung63@gmail.com">hudsonmyung63@gmail.com</a> · <a href="tel:9493030376">9493030376</a>
+          Crafted by Hudson™ · <a href="mailto:hudsonmyung63@gmail.com">hudsonmyung63@gmail.com</a> · <a href="https://www.linkedin.com/in/hudson-myung-7aa927241/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
         </p>
       </Container>
     </footer>
