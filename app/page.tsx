@@ -4,7 +4,6 @@ import SectionHeader from "@/components/shared/SectionHeader";
 import Container from "@/components/shared/Container";
 import PillarCard from "@/components/PillarCard";
 import StoryBlock from "@/components/StoryBlock";
-import ImpactBar from "@/components/ImpactBar";
 import CoastalMonksBlock from "@/components/CoastalMonksBlock";
 import Footer from "@/components/Footer";
 import ImageSection from "@/components/shared/ImageSection";
@@ -110,14 +109,6 @@ export default function Home() {
           </Container>
         </div>
       </ImageSection>
-
-      <ImpactBar
-        metrics={[
-          { label: "Wishes touched" },
-          { label: "Nights of shelter provided" },
-          { label: "Community actions logged by Coastal Monks" },
-        ]}
-      />
 
       <CoastalMonksBlock />
 
