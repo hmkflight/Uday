@@ -46,7 +46,7 @@ export default function RecoveryStoriesPage() {
 
           <div className="py-12">
             <h3 className="fade-in-text text-h3 mb-6 text-charcoal font-semibold">
-              Recovery Testimony
+              Startup Testimony
             </h3>
             <div className="fade-in-text w-full max-w-4xl mx-auto">
               <video
@@ -54,7 +54,8 @@ export default function RecoveryStoriesPage() {
                 className="w-full h-auto rounded-xl shadow-[0_2px_16px_rgba(0,0,0,0.04)]"
                 preload="metadata"
               >
-                <source src="/videos/testimony-1.mp4" type="video/mp4" />
+                <source src="/videos/img-3933_LpP6OAbD.mov" type="video/quicktime" />
+                <source src="/videos/img-3933_LpP6OAbD.mov" type="video/mp4" />
                 Your browser does not support the video element.
               </video>
             </div>
