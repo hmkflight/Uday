@@ -1,8 +1,14 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Container from "@/components/shared/Container";
 import Section from "@/components/shared/Section";
 import SectionHeader from "@/components/shared/SectionHeader";
 import Footer from "@/components/Footer";
+
+export const metadata: Metadata = {
+  title: "Recovery Stories | Uday",
+  description: "Real voices and recovery stories from the Rescue Mission—people who found hope, dignity, and a new beginning.",
+};
 
 export default function RecoveryStoriesPage() {
   return (
