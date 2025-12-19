@@ -25,7 +25,7 @@ export default function MotionEffects() {
             const rect = section.getBoundingClientRect();
             const scrolled = window.scrollY;
             const sectionTop = scrolled + rect.top;
-            const offset = (scrolled - sectionTop) * 0.12;
+            const offset = (scrolled - sectionTop) * 0.2;
 
             const bgElement = section.querySelector(
               ".parallax-bg-image"
