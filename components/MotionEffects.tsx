@@ -54,6 +54,8 @@ export default function MotionEffects() {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("fade-in-active");
+        } else {
+          entry.target.classList.remove("fade-in-active");
         }
       });
     }, observerOptions);
