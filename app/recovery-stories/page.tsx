@@ -45,9 +45,19 @@ export default function RecoveryStoriesPage() {
           />
 
           <div className="py-12">
-            <p className="fade-in-text text-body text-charcoal opacity-70 leading-relaxed max-w-prose">
-              Stories will be shared here as individuals choose to tell them—in their own time, in their own words.
-            </p>
+            <h3 className="fade-in-text text-h3 mb-6 text-charcoal font-semibold">
+              Recovery Testimony
+            </h3>
+            <div className="fade-in-text w-full max-w-4xl mx-auto">
+              <video
+                controls
+                className="w-full h-auto rounded-xl shadow-[0_2px_16px_rgba(0,0,0,0.04)]"
+                preload="metadata"
+              >
+                <source src="/videos/testimony-1.mp4" type="video/mp4" />
+                Your browser does not support the video element.
+              </video>
+            </div>
           </div>
         </Container>
       </Section>
