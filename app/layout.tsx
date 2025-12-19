@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Source_Serif_4 } from "next/font/google";
 import "./globals.css";
+import MotionEffects from "@/components/MotionEffects";
 
 const sourceSerif = Source_Serif_4({
   subsets: ["latin"],
@@ -20,7 +21,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={sourceSerif.variable}>
-      <body>{children}</body>
+      <body>
+        <MotionEffects />
+        {children}
+      </body>
     </html>
   );
 }

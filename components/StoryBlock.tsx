@@ -33,17 +33,17 @@ export default function StoryBlock({
       )}
 
       {/* Label */}
-      <p className="text-small text-white mb-3 uppercase tracking-wide font-semibold opacity-90">
+      <p className="fade-in-text text-small text-white mb-3 uppercase tracking-wide font-semibold opacity-90">
         {label}
       </p>
 
       {/* Title */}
-      <h3 className="text-h3 mb-4 leading-tight text-white font-semibold">
+      <h3 className="fade-in-text text-h3 mb-4 leading-tight text-white font-semibold">
         {title}
       </h3>
 
       {/* Body */}
-      <p className="text-body text-white mb-6 leading-relaxed opacity-90 font-normal">
+      <p className="fade-in-text text-body text-white mb-6 leading-relaxed opacity-90 font-normal">
         {body}
       </p>
 

@@ -16,6 +16,7 @@ export default function SectionHeader({
   const textColor = onImage ? "text-white" : "";
   const introColor = onImage ? "text-white opacity-90" : "text-warmGray";
   const titleWeight = onImage ? "font-semibold" : "font-semibold";
+  const fadeClass = onImage ? "fade-in-text" : "";
 
   return (
     <div
@@ -23,12 +24,12 @@ export default function SectionHeader({
         centered ? "text-center" : "text-left"
       }`}
     >
-      <h2 className={`text-h2 mb-4 leading-snug ${textColor} ${titleWeight}`}>
+      <h2 className={`text-h2 mb-4 leading-snug ${textColor} ${titleWeight} ${fadeClass}`}>
         {title}
       </h2>
       {intro && (
         <p
-          className={`text-body ${introColor} leading-relaxed max-w-2xl ${centered ? "mx-auto" : ""} font-normal`}
+          className={`text-body ${introColor} leading-relaxed max-w-2xl ${centered ? "mx-auto" : ""} font-normal ${fadeClass}`}
           style={{ lineHeight: "1.7" }}
         >
           {intro}

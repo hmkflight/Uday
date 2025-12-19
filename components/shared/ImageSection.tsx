@@ -22,14 +22,22 @@ export default function ImageSection({
   return (
     <section
       id={id}
-      className={`relative ${className}`}
-      style={{
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}
+      className={`relative parallax-bg ${className}`}
     >
+      {/* Parallax background layer */}
+      <div
+        className="parallax-bg-image absolute inset-0"
+        style={{
+          backgroundImage: `url(${backgroundImage})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          top: "-10%",
+          height: "120%",
+        }}
+        aria-hidden="true"
+      />
+
       {/* Overlay for readability */}
       <div
         className={`absolute inset-0 ${overlayClass}`}
