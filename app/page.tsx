@@ -96,7 +96,7 @@ export default function Home() {
               title="A warm bed, a meal, and a new start"
               body="Behind every bed at the Rescue Mission is a person with a name, a past, and a future. Support here helps someone move from surviving day-to-day to taking the first steps toward stability, recovery, and community."
               linkText="See more recovery stories"
-              linkHref="#recovery"
+              linkHref="/recovery-stories"
             />
 
             <StoryBlock
