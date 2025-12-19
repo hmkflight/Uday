@@ -6,6 +6,8 @@ interface StoryBlockProps {
   body: string;
   linkText: string;
   linkHref?: string;
+  linkTarget?: string;
+  linkRel?: string;
   imageSrc?: string;
   imageAlt?: string;
 }
@@ -16,6 +18,8 @@ export default function StoryBlock({
   body,
   linkText,
   linkHref = "#",
+  linkTarget,
+  linkRel,
   imageSrc,
   imageAlt = "",
 }: StoryBlockProps) {
@@ -50,6 +54,8 @@ export default function StoryBlock({
       {/* Link */}
       <a
         href={linkHref}
+        target={linkTarget}
+        rel={linkRel}
         className="text-body text-white underline hover:opacity-80 inline-block min-h-[44px] flex items-center transition-opacity duration-200 font-normal"
       >
         {linkText}

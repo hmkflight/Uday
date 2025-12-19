@@ -87,7 +87,9 @@ export default function Home() {
               title="From just another day to a day they will never forget"
               body="A young person in foster care wished for something simple that helped them feel seen—a class, an experience, or a gift that said you matter. Through One Simple Wish and supporters like you, that hope became a real memory."
               linkText="See more wishes"
-              linkHref="#wishes"
+              linkHref="https://www.onesimplewish.org/wish/wish-grant"
+              linkTarget="_blank"
+              linkRel="noopener noreferrer"
             />
 
             <StoryBlock
