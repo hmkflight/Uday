@@ -56,6 +56,11 @@ export default function Footer() {
             Connect with Uday on LinkedIn
           </a>
         </div>
+
+        {/* Credit line */}
+        <p className="hudson-credit">
+          Crafted by Hudson™ · <a href="mailto:hudsonmyung63@gmail.com">hudsonmyung63@gmail.com</a>
+        </p>
       </Container>
     </footer>
   );

@@ -96,4 +96,21 @@
       font-size: 15px;
     }
   }
+
+  /* Hudson credit line */
+  .hudson-credit {
+    font-size: 12px;
+    text-align: center;
+    opacity: 0.5;
+    margin-top: 2rem;
+  }
+
+  .hudson-credit a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .hudson-credit a:hover {
+    text-decoration: underline;
+  }
 }
