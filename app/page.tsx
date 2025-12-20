@@ -26,8 +26,10 @@ export default function Home() {
               tag="Uday"
               title="The story that ties it all together"
               body="Uday's journey runs through second chances, quiet courage, and showing up when it matters. This space is where a personal mission becomes something we can all be part of."
-              linkText="Read Uday's story"
-              linkHref="#uday"
+              linkText="Connect on LinkedIn"
+              linkHref="https://www.linkedin.com/in/udaygupta/"
+              linkTarget="_blank"
+              linkRel="noopener noreferrer"
             />
 
             <PillarCard
@@ -97,14 +99,6 @@ export default function Home() {
               body="Behind every bed at the Rescue Mission is a person with a name, a past, and a future. Support here helps someone move from surviving day-to-day to taking the first steps toward stability, recovery, and community."
               linkText="See more recovery stories"
               linkHref="/recovery-stories"
-            />
-
-            <StoryBlock
-              label="Uday"
-              title="Why this coast, this mission, and this community"
-              body="There is a certain quiet you feel standing on the coast—big sky, open water, endless horizon. This project is about bringing that same sense of openness and possibility into the lives of people carrying far more than most of us can see."
-              linkText="Read more from Uday"
-              linkHref="#uday-story"
             />
           </Container>
         </div>

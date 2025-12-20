@@ -3,7 +3,6 @@ import Container from "./shared/Container";
 
 export default function Footer() {
   const navLinks: Array<{ label: string; href: string; target?: string; rel?: string }> = [
-    { label: "Uday's Story", href: "#uday" },
     { label: "One Simple Wish", href: "https://www.onesimplewish.org/site/donate?utm_source=google&utm_medium=cpc&campaignid=23280953753&adgroupid=191784224591&creative=784857427865&matchtype=b&network=g&device=c&keyword=one%20simple%20wish&gad_source=1&gad_campaignid=23280953753&gbraid=0AAAAADyxxbyhSaYSFTpgHOD7iXt3_y6AJ&gclid=Cj0KCQiAxonKBhC1ARIsAIHq_lvRtDWZsu5hZ9FEySyK97zZO351HJXzhVFYaNr4NZ6ilpyJ0qmzQg8aAilgEALw_wcB", target: "_blank", rel: "noopener noreferrer" },
     { label: "Rescue Mission", href: "https://www.rescuemission.org/", target: "_blank", rel: "noopener noreferrer" },
     { label: "Coastal Monks", href: "#coastal-monks" },

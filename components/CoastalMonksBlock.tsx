@@ -41,12 +41,9 @@ export default function CoastalMonksBlock() {
         </ul>
 
         {/* CTAs */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+        <div className="flex justify-center mb-8">
           <Button variant="primary" href="mailto:me@uday.com">
             Join Coastal Monks
-          </Button>
-          <Button variant="secondary" href="#how-it-works">
-            Learn how it works
           </Button>
         </div>
 
