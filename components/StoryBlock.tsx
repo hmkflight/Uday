@@ -4,7 +4,7 @@ interface StoryBlockProps {
   label: string;
   title: string;
   body: string;
-  linkText: string;
+  linkText?: string;
   linkHref?: string;
   linkTarget?: string;
   linkRel?: string;
@@ -52,14 +52,16 @@ export default function StoryBlock({
       </p>
 
       {/* Link */}
-      <a
-        href={linkHref}
-        target={linkTarget}
-        rel={linkRel}
-        className="text-body text-white underline hover:opacity-80 inline-block min-h-[44px] flex items-center transition-opacity duration-200 font-normal"
-      >
-        {linkText}
-      </a>
+      {linkText && (
+        <a
+          href={linkHref}
+          target={linkTarget}
+          rel={linkRel}
+          className="text-body text-white underline hover:opacity-80 inline-block min-h-[44px] flex items-center transition-opacity duration-200 font-normal"
+        >
+          {linkText}
+        </a>
+      )}
     </div>
   );
 }
