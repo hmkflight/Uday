@@ -51,13 +51,18 @@ export default function RecoveryStoriesPage() {
             <div className="fade-in-text w-full max-w-4xl mx-auto">
               <video
                 controls
-                className="w-full h-auto rounded-xl shadow-[0_2px_16px_rgba(0,0,0,0.04)]"
-                preload="metadata"
+                playsInline
+                className="w-full h-auto rounded-xl shadow-[0_2px_16px_rgba(0,0,0,0.04)] bg-warmBeige"
+                preload="auto"
+                style={{ minHeight: '300px' }}
               >
                 <source src="/videos/img-3933_LpP6OAbD.mov" type="video/quicktime" />
                 <source src="/videos/img-3933_LpP6OAbD.mov" type="video/mp4" />
-                Your browser does not support the video element.
+                Your browser does not support the video element. Please try a different browser or contact support.
               </video>
+              <p className="text-small text-warmGray mt-4 text-center">
+                If the video does not load, please refresh the page or try a different browser.
+              </p>
             </div>
           </div>
         </Container>
