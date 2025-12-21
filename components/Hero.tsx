@@ -31,7 +31,7 @@ export default function Hero() {
               A coastal community for second chances
             </h1>
             <p className="fade-in-text text-[17px] md:text-[20px] lg:text-[22px] mb-8 md:mb-10 text-white font-normal opacity-85 md:opacity-90 leading-relaxed max-w-2xl mx-auto">
-              Uday, One Simple Wish, and Rescue Mission together in one home—bringing hope, dignity, and opportunity to people who need it most.
+              Three ways to help—wishes, shelter, and second chances—all in one coastal home.
             </p>
 
             {/* CTAs - Mobile first: full width stacked, desktop: horizontal */}
@@ -51,7 +51,7 @@ export default function Hero() {
 
             {/* Original support line - slightly de-emphasized */}
             <p className="fade-in-text text-[14px] md:text-[15px] lg:text-[16px] text-white opacity-65 md:opacity-70 font-normal leading-relaxed">
-              Where a personal story, children's wishes, and recovery journeys meet the California coast.
+              Where personal stories and real needs meet the California coast.
             </p>
           </div>
 

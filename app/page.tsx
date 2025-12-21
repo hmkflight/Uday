@@ -15,7 +15,7 @@ export default function Home() {
       <Hero />
 
       <Section id="help" className="py-16 md:py-24 lg:py-28">
-        <Container>
+        <Container maxWidth="section">
           {/* Section intro - centered and concise */}
           <div className="text-center max-w-2xl mx-auto mb-12 md:mb-16 lg:mb-20 px-4">
             <h2 className="text-[28px] md:text-[36px] lg:text-[42px] mb-4 md:mb-5 leading-tight font-semibold text-charcoal">
@@ -27,12 +27,12 @@ export default function Home() {
           </div>
 
           {/* Pillars grid - mobile first with generous spacing */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-10 lg:gap-12 mb-12 md:mb-16 divide-y md:divide-y-0 md:divide-x divide-warmBeige divide-opacity-30">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-10 lg:gap-16 mb-12 md:mb-16 divide-y md:divide-y-0 md:divide-x divide-warmBeige divide-opacity-30">
             <PillarCard
               tag="Uday"
               icon="person"
               title="The story that ties it all together"
-              body="Uday's journey runs through second chances, quiet courage, and showing up when it matters. This space is where a personal mission becomes something we can all be part of."
+              body="A journey of second chances and quiet courage. A personal mission becoming something we can all share."
               linkText="Connect with Uday on LinkedIn"
               linkHref="https://www.linkedin.com/in/udaygupta/"
               linkTarget="_blank"
@@ -44,7 +44,7 @@ export default function Home() {
               tag="One Simple Wish"
               icon="heart"
               title="Grant moments of joy that last"
-              body="One Simple Wish helps grant meaningful wishes for children and young people impacted by foster care. Through this partnership, every wish supported here becomes part of our shared impact."
+              body="Help grant meaningful wishes for children and young people in foster care. Every wish becomes part of our shared impact."
               bullets={[
                 "Grant or sponsor a wish",
                 "Share a wish with your friends",
@@ -60,7 +60,7 @@ export default function Home() {
               tag="Rescue Mission"
               icon="home"
               title="Stand with people rebuilding their lives"
-              body="Rescue Mission programs offer shelter, meals, and long-term recovery support. Together, we focus on real people, real beds, and real chances to begin again."
+              body="Shelter, meals, and recovery support for real people getting real chances to begin again."
               bullets={[
                 "Help provide a bed and a meal",
                 "Support recovery and counseling programs",
@@ -75,7 +75,7 @@ export default function Home() {
 
           {/* Closing line */}
           <p className="text-[15px] md:text-[16px] text-center text-warmGray max-w-2xl mx-auto leading-relaxed opacity-75 px-4">
-            Whether you start with a wish, a meal, or a story, you are stepping into the same circle of care.
+            Start anywhere—you're stepping into the same circle of care.
           </p>
         </Container>
       </Section>
@@ -87,14 +87,14 @@ export default function Home() {
         useGradient={true}
       >
         <div className="py-16 md:py-24 lg:py-28">
-          <Container maxWidth="content">
+          <Container maxWidth="section">
             {/* Section intro */}
             <div className="mb-12 md:mb-16 lg:mb-20">
               <h2 className="fade-in-text text-[28px] md:text-[36px] lg:text-[42px] mb-4 md:mb-5 leading-tight text-white font-semibold">
                 Stories from our shared coast
               </h2>
-              <p className="fade-in-text text-[16px] md:text-[18px] text-white leading-relaxed opacity-75 max-w-2xl">
-                These are the kinds of moments your support makes possible—up close, human, and real.
+              <p className="fade-in-text text-[16px] md:text-[18px] text-white leading-relaxed opacity-75 max-w-3xl">
+                The kinds of moments your support makes possible—up close and real.
               </p>
             </div>
 
@@ -103,7 +103,7 @@ export default function Home() {
               label="One Simple Wish"
               icon="sparkles"
               title="From just another day to a day they will never forget"
-              body="A young person in foster care wished for something simple that helped them feel seen. Through One Simple Wish and supporters like you, that hope became a real memory."
+              body="A young person wished for something simple. Through supporters like you, that hope became a memory."
               linkText="See more wishes"
               linkHref="https://www.onesimplewish.org/wish/wish-grant"
               linkTarget="_blank"
@@ -114,7 +114,7 @@ export default function Home() {
               label="Rescue Mission"
               icon="shelter"
               title="A warm bed, a meal, and a new start"
-              body="Behind every bed at the Rescue Mission is a person with a name, a past, and a future. Support here helps someone move from surviving to taking the first steps toward stability and recovery."
+              body="Behind every bed is a person with a name and a future. Your support helps someone take the first steps toward recovery."
               linkText="See more recovery stories"
               linkHref="/recovery-stories"
             />
@@ -123,7 +123,9 @@ export default function Home() {
               label="Uday"
               icon="waves"
               title="Why this coast, this mission, and this community"
-              body="There is a certain quiet you feel standing on the coast—big sky, open water, endless horizon. This project is about bringing that same sense of openness into the lives of people carrying far more than most of us can see."
+              body="The coast offers big sky, open water, endless horizon. This project brings that same openness to lives carrying more than most can see."
+              linkText=""
+              linkHref=""
             />
           </Container>
         </div>

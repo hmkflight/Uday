@@ -34,7 +34,7 @@ Thank you for creating this opportunity.`
 
         {/* Intro paragraph */}
         <p className="text-body text-center text-charcoal mb-12 max-w-content mx-auto leading-relaxed">
-          Many meaningful things begin with very little. Coastal Monks offers a limited number of $500 seed grants to people trying to start something good—whether it's a project, a service, or a second chance.
+          Meaningful things often begin with very little. We offer $500 seed grants to people starting something good.
         </p>
 
         {/* Prompt block */}
@@ -60,7 +60,7 @@ Thank you for creating this opportunity.`
 
         {/* Trust statement */}
         <p className="text-body text-center text-warmGray mb-12 max-w-content mx-auto leading-relaxed">
-          This is a trust-based grant. If you're able to give it back someday, it will help someone else begin. If not, that's okay too. What matters is that something good was tried.
+          This is trust-based. If you can give it back someday, great. If not, that's okay. What matters is trying.
         </p>
 
         {/* CTA */}

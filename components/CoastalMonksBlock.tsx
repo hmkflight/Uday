@@ -16,12 +16,12 @@ export default function CoastalMonksBlock() {
 
         {/* Definition */}
         <p className="text-body text-center text-charcoal mb-8 max-w-content mx-auto leading-relaxed">
-          Coastal Monks is a community of people who want to help each other and help others—starting right where we live.
+          A community of people helping each other and helping others—starting right where we live.
         </p>
 
         {/* Supporting text */}
         <p className="text-body text-center text-warmGray mb-12 max-w-content mx-auto leading-relaxed">
-          Think of Coastal Monks as a coastal clubhouse for everyday givers, helpers, and bridge-builders. No perfection or performance—just people who care, showing up together.
+          A coastal home for everyday givers and helpers. No perfection required—just showing up.
         </p>
 
         {/* Bullets */}
@@ -71,7 +71,7 @@ export default function CoastalMonksBlock() {
                 Join the circle
               </h4>
               <p className="text-[15px] md:text-[16px] text-charcoal opacity-75 leading-relaxed max-w-xs mx-auto">
-                Become part of a community built on trust, dignity, and second chances.
+                Join a community built on trust and second chances.
               </p>
             </div>
 
@@ -86,7 +86,7 @@ export default function CoastalMonksBlock() {
                 Choose how you want to help
               </h4>
               <p className="text-[15px] md:text-[16px] text-charcoal opacity-75 leading-relaxed max-w-xs mx-auto">
-                Support a wish, a meal, a story, or a new beginning in a way that feels right to you.
+                Support wishes, meals, or new beginnings in ways that feel right.
               </p>
             </div>
 
@@ -102,7 +102,7 @@ export default function CoastalMonksBlock() {
                 See your impact grow
               </h4>
               <p className="text-[15px] md:text-[16px] text-charcoal opacity-75 leading-relaxed max-w-xs mx-auto">
-                Follow how your support turns into real moments, real help, and lasting change.
+                See your support turn into real moments and lasting change.
               </p>
             </div>
           </div>
