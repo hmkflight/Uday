@@ -49,20 +49,13 @@ export default function RecoveryStoriesPage() {
               Startup Testimony
             </h3>
             <div className="fade-in-text w-full max-w-4xl mx-auto">
-              <video
-                controls
-                playsInline
-                className="w-full h-auto rounded-xl shadow-[0_2px_16px_rgba(0,0,0,0.04)] bg-warmBeige"
-                preload="auto"
-                style={{ minHeight: '300px' }}
-              >
-                <source src="/videos/img-3933_LpP6OAbD.mov" type="video/quicktime" />
-                <source src="/videos/img-3933_LpP6OAbD.mov" type="video/mp4" />
-                Your browser does not support the video element. Please try a different browser or contact support.
-              </video>
-              <p className="text-small text-warmGray mt-4 text-center">
-                If the video does not load, please refresh the page or try a different browser.
-              </p>
+              <iframe
+                src="https://www.youtube.com/embed/Ht5ty6_Zec8"
+                title="Startup Testimony"
+                className="w-full aspect-video rounded-xl shadow-[0_2px_16px_rgba(0,0,0,0.04)]"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
             </div>
           </div>
         </Container>
