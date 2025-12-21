@@ -4,6 +4,7 @@ interface ImageSectionProps {
   backgroundImage: string;
   overlayOpacity?: number;
   overlayColor?: "dark" | "warm";
+  useGradient?: boolean;
   children: React.ReactNode;
   className?: string;
   id?: string;
@@ -13,6 +14,7 @@ export default function ImageSection({
   backgroundImage,
   overlayOpacity = 0.5,
   overlayColor = "dark",
+  useGradient = false,
   children,
   className = "",
   id,
@@ -39,11 +41,21 @@ export default function ImageSection({
       />
 
       {/* Overlay for readability */}
-      <div
-        className={`absolute inset-0 ${overlayClass}`}
-        style={{ opacity: overlayOpacity }}
-        aria-hidden="true"
-      />
+      {useGradient ? (
+        <div
+          className="absolute inset-0"
+          style={{
+            background: `linear-gradient(to bottom, rgba(0, 0, 0, ${overlayOpacity + 0.15}) 0%, rgba(0, 0, 0, ${overlayOpacity}) 100%)`,
+          }}
+          aria-hidden="true"
+        />
+      ) : (
+        <div
+          className={`absolute inset-0 ${overlayClass}`}
+          style={{ opacity: overlayOpacity }}
+          aria-hidden="true"
+        />
+      )}
 
       {/* Content layer */}
       <div className="relative z-10">{children}</div>

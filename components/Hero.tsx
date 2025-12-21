@@ -9,15 +9,16 @@ export default function Hero() {
       backgroundImage="/images/istockphoto-177521471-612x612.jpg"
       overlayOpacity={0.45}
       overlayColor="dark"
+      useGradient={true}
     >
-      <div className="py-20 md:py-32">
+      <div className="py-16 md:py-28 lg:py-32">
         <Container>
           {/* Logo */}
-          <div className="flex justify-center mb-10 md:mb-14">
+          <div className="flex justify-center mb-8 md:mb-12 lg:mb-14">
             <img
               src="/images/Logos-removebg-preview.png"
               alt="Coastal Monks Logo"
-              className="h-24 md:h-32 w-auto"
+              className="h-20 md:h-28 lg:h-32 w-auto"
               style={{
                 filter: 'drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3))'
               }}
@@ -25,45 +26,59 @@ export default function Hero() {
           </div>
 
           {/* Main headline and subheadline */}
-          <div className="max-w-3xl mx-auto text-center mb-16 md:mb-20">
-            <h1 className="fade-in-text text-[36px] md:text-[52px] mb-4 text-white font-semibold leading-tight">
+          <div className="max-w-3xl mx-auto text-center mb-12 md:mb-16 lg:mb-20 px-4">
+            <h1 className="fade-in-text text-[30px] md:text-[48px] lg:text-[56px] mb-5 md:mb-6 text-white font-semibold leading-[1.25] md:leading-tight">
               A coastal community for second chances
             </h1>
-            <p className="fade-in-text text-[18px] md:text-[22px] mb-12 text-white font-normal opacity-90 leading-relaxed max-w-2xl mx-auto">
+            <p className="fade-in-text text-[17px] md:text-[20px] lg:text-[22px] mb-8 md:mb-10 text-white font-normal opacity-85 md:opacity-90 leading-relaxed max-w-2xl mx-auto">
               Uday, One Simple Wish, and Rescue Mission together in one home—bringing hope, dignity, and opportunity to people who need it most.
             </p>
 
-            {/* CTAs */}
-            <div className="flex flex-col sm:flex-row gap-5 justify-center mb-8">
-              <Button variant="primary" href="#help">
+            {/* CTAs - Mobile first: full width stacked, desktop: horizontal */}
+            <div className="flex flex-col md:flex-row gap-4 md:gap-5 justify-center mb-6 md:mb-8 max-w-md md:max-w-none mx-auto">
+              <Button variant="primary" href="#help" className="w-full md:w-auto">
                 See how you can help
               </Button>
-              <Button variant="secondary" href="#coastal-monks">
+              <Button variant="secondary" href="#coastal-monks" className="w-full md:w-auto">
                 Meet Coastal Monks
               </Button>
             </div>
 
-            {/* Support line */}
-            <p className="fade-in-text text-[15px] md:text-[17px] text-white opacity-80 font-normal leading-relaxed">
+            {/* New supporting line */}
+            <p className="fade-in-text text-[15px] md:text-[16px] lg:text-[17px] text-white opacity-75 md:opacity-80 font-normal leading-relaxed mb-3 md:mb-4">
+              Start with a story, a wish, or a place to begin again.
+            </p>
+
+            {/* Original support line - slightly de-emphasized */}
+            <p className="fade-in-text text-[14px] md:text-[15px] lg:text-[16px] text-white opacity-65 md:opacity-70 font-normal leading-relaxed">
               Where a personal story, children's wishes, and recovery journeys meet the California coast.
             </p>
           </div>
 
-          {/* Stats strip */}
-          <div className="grid grid-cols-3 gap-6 md:gap-10 max-w-3xl mx-auto pt-10 border-t border-white border-opacity-25">
+          {/* Stats strip - Mobile optimized */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-8 lg:gap-10 max-w-3xl mx-auto pt-8 md:pt-10 border-t border-white border-opacity-20 px-4">
             <div className="text-center">
-              <p className="text-[14px] md:text-[16px] text-white font-normal opacity-85 leading-relaxed">
-                100+ wishes supported
+              <p className="text-[16px] md:text-[18px] text-white font-semibold mb-1">
+                100+
+              </p>
+              <p className="text-[13px] md:text-[14px] text-white opacity-70 leading-relaxed">
+                wishes supported
               </p>
             </div>
             <div className="text-center">
-              <p className="text-[14px] md:text-[16px] text-white font-normal opacity-85 leading-relaxed">
-                1,000+ nights of shelter funded
+              <p className="text-[16px] md:text-[18px] text-white font-semibold mb-1">
+                1,000+
+              </p>
+              <p className="text-[13px] md:text-[14px] text-white opacity-70 leading-relaxed">
+                nights of shelter funded
               </p>
             </div>
             <div className="text-center">
-              <p className="text-[14px] md:text-[16px] text-white font-normal opacity-85 leading-relaxed">
-                Coastal Monks: a growing circle of supporters
+              <p className="text-[16px] md:text-[18px] text-white font-semibold mb-1">
+                Growing
+              </p>
+              <p className="text-[13px] md:text-[14px] text-white opacity-70 leading-relaxed">
+                circle of supporters
               </p>
             </div>
           </div>
