@@ -4,6 +4,7 @@ import SectionHeader from "@/components/shared/SectionHeader";
 import Container from "@/components/shared/Container";
 import PillarCard from "@/components/PillarCard";
 import StoryBlock from "@/components/StoryBlock";
+import SeedGrantBlock from "@/components/SeedGrantBlock";
 import CoastalMonksBlock from "@/components/CoastalMonksBlock";
 import Footer from "@/components/Footer";
 import ImageSection from "@/components/shared/ImageSection";
@@ -110,6 +111,8 @@ export default function Home() {
           </Container>
         </div>
       </ImageSection>
+
+      <SeedGrantBlock />
 
       <CoastalMonksBlock />
 
