@@ -84,20 +84,26 @@ export default function Home() {
         backgroundImage="/images/beach.webp"
         overlayOpacity={0.45}
         overlayColor="dark"
+        useGradient={true}
       >
-        <div className="py-16 md:py-24">
+        <div className="py-16 md:py-24 lg:py-28">
           <Container maxWidth="content">
-            <SectionHeader
-              title="Stories from our shared coast"
-              intro="These are the kinds of moments your support makes possible—up close, human, and real."
-              centered={false}
-              onImage={true}
-            />
+            {/* Section intro */}
+            <div className="mb-12 md:mb-16 lg:mb-20">
+              <h2 className="fade-in-text text-[28px] md:text-[36px] lg:text-[42px] mb-4 md:mb-5 leading-tight text-white font-semibold">
+                Stories from our shared coast
+              </h2>
+              <p className="fade-in-text text-[16px] md:text-[18px] text-white leading-relaxed opacity-75 max-w-2xl">
+                These are the kinds of moments your support makes possible—up close, human, and real.
+              </p>
+            </div>
 
+            {/* Story blocks with icons */}
             <StoryBlock
               label="One Simple Wish"
+              icon="sparkles"
               title="From just another day to a day they will never forget"
-              body="A young person in foster care wished for something simple that helped them feel seen—a class, an experience, or a gift that said you matter. Through One Simple Wish and supporters like you, that hope became a real memory."
+              body="A young person in foster care wished for something simple that helped them feel seen. Through One Simple Wish and supporters like you, that hope became a real memory."
               linkText="See more wishes"
               linkHref="https://www.onesimplewish.org/wish/wish-grant"
               linkTarget="_blank"
@@ -106,16 +112,18 @@ export default function Home() {
 
             <StoryBlock
               label="Rescue Mission"
+              icon="shelter"
               title="A warm bed, a meal, and a new start"
-              body="Behind every bed at the Rescue Mission is a person with a name, a past, and a future. Support here helps someone move from surviving day-to-day to taking the first steps toward stability, recovery, and community."
+              body="Behind every bed at the Rescue Mission is a person with a name, a past, and a future. Support here helps someone move from surviving to taking the first steps toward stability and recovery."
               linkText="See more recovery stories"
               linkHref="/recovery-stories"
             />
 
             <StoryBlock
               label="Uday"
+              icon="waves"
               title="Why this coast, this mission, and this community"
-              body="There is a certain quiet you feel standing on the coast—big sky, open water, endless horizon. This project is about bringing that same sense of openness and possibility into the lives of people carrying far more than most of us can see."
+              body="There is a certain quiet you feel standing on the coast—big sky, open water, endless horizon. This project is about bringing that same sense of openness into the lives of people carrying far more than most of us can see."
             />
           </Container>
         </div>
