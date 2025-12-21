@@ -14,17 +14,23 @@ export default function Home() {
     <main>
       <Hero />
 
-      <Section id="help">
+      <Section id="help" className="py-16 md:py-24 lg:py-28">
         <Container>
-          <SectionHeader
-            title="Three connected ways to make an impact"
-            intro="Each pillar stands on its own—and all three connect to form a circle of care."
-            centered={false}
-          />
+          {/* Section intro - centered and concise */}
+          <div className="text-center max-w-2xl mx-auto mb-12 md:mb-16 lg:mb-20 px-4">
+            <h2 className="text-[28px] md:text-[36px] lg:text-[42px] mb-4 md:mb-5 leading-tight font-semibold text-charcoal">
+              Three connected ways to make an impact
+            </h2>
+            <p className="text-[16px] md:text-[18px] text-warmGray leading-relaxed opacity-80">
+              Each pillar stands on its own—and all three connect to form a circle of care.
+            </p>
+          </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          {/* Pillars grid - mobile first with generous spacing */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-10 lg:gap-12 mb-12 md:mb-16 divide-y md:divide-y-0 md:divide-x divide-warmBeige divide-opacity-30">
             <PillarCard
               tag="Uday"
+              icon="person"
               title="The story that ties it all together"
               body="Uday's journey runs through second chances, quiet courage, and showing up when it matters. This space is where a personal mission becomes something we can all be part of."
               linkText="Connect with Uday on LinkedIn"
@@ -36,6 +42,7 @@ export default function Home() {
 
             <PillarCard
               tag="One Simple Wish"
+              icon="heart"
               title="Grant moments of joy that last"
               body="One Simple Wish helps grant meaningful wishes for children and young people impacted by foster care. Through this partnership, every wish supported here becomes part of our shared impact."
               bullets={[
@@ -51,6 +58,7 @@ export default function Home() {
 
             <PillarCard
               tag="Rescue Mission"
+              icon="home"
               title="Stand with people rebuilding their lives"
               body="Rescue Mission programs offer shelter, meals, and long-term recovery support. Together, we focus on real people, real beds, and real chances to begin again."
               bullets={[
@@ -65,7 +73,8 @@ export default function Home() {
             />
           </div>
 
-          <p className="text-body text-center text-warmGray max-w-content mx-auto leading-relaxed">
+          {/* Closing line */}
+          <p className="text-[15px] md:text-[16px] text-center text-warmGray max-w-2xl mx-auto leading-relaxed opacity-75 px-4">
             Whether you start with a wish, a meal, or a story, you are stepping into the same circle of care.
           </p>
         </Container>
