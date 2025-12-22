@@ -32,7 +32,7 @@ export default function Home() {
               tag="Uday"
               icon="person"
               title="The story that ties it all together"
-              body="A journey of second chances and quiet courage. A personal mission becoming something we can all share."
+              body="A journey of love loans and quiet courage. A personal mission becoming something we can all share."
               linkText="Connect with Uday on LinkedIn"
               linkHref="https://www.linkedin.com/in/udaygupta/"
               linkTarget="_blank"

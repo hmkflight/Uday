@@ -71,7 +71,7 @@ export default function CoastalMonksBlock() {
                 Join the circle
               </h4>
               <p className="text-[15px] md:text-[16px] text-charcoal opacity-75 leading-relaxed max-w-xs mx-auto">
-                Join a community built on trust and second chances.
+                Join a community built on trust and love loans.
               </p>
             </div>
 
