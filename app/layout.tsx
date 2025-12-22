@@ -10,8 +10,8 @@ const sourceSerif = Source_Serif_4({
 });
 
 export const metadata: Metadata = {
-  title: "Coastal Community for Second Chances | Uday",
-  description: "A coastal community for second chances—bringing hope, dignity, and opportunity through Uday, One Simple Wish, and Rescue Mission.",
+  title: "Coastal Partnership of Friendship and Love | Uday",
+  description: "A coastal partnership of friendship and love—bringing hope, dignity, and opportunity through Uday, One Simple Wish, and Rescue Mission.",
 };
 
 export default function RootLayout({

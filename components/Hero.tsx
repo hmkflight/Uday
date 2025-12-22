@@ -28,7 +28,7 @@ export default function Hero() {
           {/* Main headline and subheadline */}
           <div className="max-w-3xl mx-auto text-center mb-12 md:mb-16 lg:mb-20 px-4">
             <h1 className="fade-in-text text-[30px] md:text-[48px] lg:text-[56px] mb-5 md:mb-6 text-white font-semibold leading-[1.25] md:leading-tight">
-              A coastal community for second chances
+              A coastal partnership of friendship and love
             </h1>
             <p className="fade-in-text text-[17px] md:text-[20px] lg:text-[22px] mb-8 md:mb-10 text-white font-normal opacity-85 md:opacity-90 leading-relaxed max-w-2xl mx-auto">
               Three ways to help—wishes, shelter, and love loans—all in one coastal home.

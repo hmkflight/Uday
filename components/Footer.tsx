@@ -14,7 +14,7 @@ export default function Footer() {
       <Container>
         {/* Mission line */}
         <p className="text-small text-center text-charcoal mb-8 leading-relaxed">
-          A California coastal home for second chances, shared stories, and everyday helpers.
+          A California coastal home for partnerships of friendship and love, shared stories, and everyday helpers.
         </p>
 
         {/* Navigation links */}
