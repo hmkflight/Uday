@@ -34,6 +34,11 @@
       animation-iteration-count: 1 !important;
       transition-duration: 0.01ms !important;
     }
+
+    /* Pause background videos for users who prefer reduced motion */
+    video {
+      animation-play-state: paused !important;
+    }
   }
 }
 

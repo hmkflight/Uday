@@ -1,12 +1,12 @@
 import React from "react";
 import Button from "./shared/Button";
 import Container from "./shared/Container";
-import ImageSection from "./shared/ImageSection";
+import VideoSection from "./shared/VideoSection";
 
 export default function Hero() {
   return (
-    <ImageSection
-      backgroundImage="/images/istockphoto-177521471-612x612.jpg"
+    <VideoSection
+      videoSrc="/videos/14937676_3840_2160_30fps.mp4"
       overlayOpacity={0.45}
       overlayColor="dark"
       useGradient={true}
@@ -84,6 +84,6 @@ export default function Hero() {
           </div>
         </Container>
       </div>
-    </ImageSection>
+    </VideoSection>
   );
 }
