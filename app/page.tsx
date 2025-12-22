@@ -7,14 +7,14 @@ import StoryBlock from "@/components/StoryBlock";
 import SeedGrantBlock from "@/components/SeedGrantBlock";
 import CoastalMonksBlock from "@/components/CoastalMonksBlock";
 import Footer from "@/components/Footer";
-import ImageSection from "@/components/shared/ImageSection";
+import VideoSection from "@/components/shared/VideoSection";
 
 export default function Home() {
   return (
     <main>
       <Hero />
 
-      <Section id="help" className="py-16 md:py-24 lg:py-28">
+      <Section id="help" className="bg-pureWhite py-16 md:py-24 lg:py-28">
         <Container maxWidth="section">
           {/* Section intro - centered and concise */}
           <div className="text-center max-w-2xl mx-auto mb-12 md:mb-16 lg:mb-20 px-4">
@@ -80,8 +80,8 @@ export default function Home() {
         </Container>
       </Section>
 
-      <ImageSection
-        backgroundImage="/images/beach.webp"
+      <VideoSection
+        videoSrc="/videos/14937676_3840_2160_30fps.mp4"
         overlayOpacity={0.45}
         overlayColor="dark"
         useGradient={true}
@@ -129,7 +129,7 @@ export default function Home() {
             />
           </Container>
         </div>
-      </ImageSection>
+      </VideoSection>
 
       <SeedGrantBlock />
 
