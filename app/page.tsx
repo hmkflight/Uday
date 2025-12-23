@@ -4,7 +4,6 @@ import SectionHeader from "@/components/shared/SectionHeader";
 import Container from "@/components/shared/Container";
 import PillarCard from "@/components/PillarCard";
 import StoryBlock from "@/components/StoryBlock";
-import SeedGrantBlock from "@/components/SeedGrantBlock";
 import CoastalMonksBlock from "@/components/CoastalMonksBlock";
 import Footer from "@/components/Footer";
 import VideoSection from "@/components/shared/VideoSection";
@@ -145,8 +144,6 @@ Thank you for creating this opportunity.`)}`}
           </Container>
         </div>
       </VideoSection>
-
-      <SeedGrantBlock />
 
       <CoastalMonksBlock />
 

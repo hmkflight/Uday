@@ -40,8 +40,7 @@ const PillarIcons = {
   seedGrant: (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-10 h-10 md:w-12 md:h-12">
       <rect x="3" y="6" width="18" height="12" rx="2" />
-      <path d="M20.84 10.61a3 3 0 0 0-4.24 0L12 15.17l-.6-.6a3 3 0 0 0-4.24 4.24l.6.6L12 23.65l4.24-4.24.6-.6a3 3 0 0 0 0-4.24z" transform="translate(0, -3) scale(0.5) translate(12, 12)" />
-      <circle cx="12" cy="11" r="2" />
+      <path d="M12 9.5c-1.5-1.5-4-1.5-5 0-1 1-1 2.5 0 3.5l5 4 5-4c1-1 1-2.5 0-3.5-1-1.5-3.5-1.5-5 0z" />
     </svg>
   ),
 };
