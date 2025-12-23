@@ -4,6 +4,7 @@ import SectionHeader from "@/components/shared/SectionHeader";
 import Container from "@/components/shared/Container";
 import PillarCard from "@/components/PillarCard";
 import StoryBlock from "@/components/StoryBlock";
+import EmailSignup from "@/components/EmailSignup";
 import CoastalMonksBlock from "@/components/CoastalMonksBlock";
 import Footer from "@/components/Footer";
 import VideoSection from "@/components/shared/VideoSection";
@@ -93,6 +94,8 @@ Thank you for creating this opportunity.`)}`}
           </p>
         </Container>
       </Section>
+
+      <EmailSignup />
 
       <VideoSection
         videoSrc="/videos/14937676_3840_2160_30fps.mp4"
