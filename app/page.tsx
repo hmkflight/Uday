@@ -29,15 +29,30 @@ export default function Home() {
           {/* Pillars grid - mobile first with generous spacing */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-10 lg:gap-16 mb-12 md:mb-16 divide-y md:divide-y-0 md:divide-x divide-warmBeige divide-opacity-30">
             <PillarCard
-              tag="Uday"
-              icon="person"
-              title="The story that ties it all together"
-              body="A journey of friendship, love, and quiet courage. A personal mission becoming something we can all share."
-              linkText="Connect with Uday on LinkedIn"
-              linkHref="https://www.linkedin.com/in/udaygupta/"
-              linkTarget="_blank"
-              linkRel="noopener noreferrer"
-              linkWithIcon={true}
+              tag="SEED GRANT"
+              icon="seedGrant"
+              title="A Small Start Can Change Everything"
+              body="Meaningful things often begin with very little. We offer $500 seed grants to people starting something good."
+              bullets={[
+                "Tell us what you're hoping to start",
+                "Share how $500 would help you begin",
+                "Ask for any other support that would help",
+              ]}
+              buttonText="Apply for a Seed Grant"
+              buttonHref={`mailto:uday@coastalmonks.org?subject=${encodeURIComponent("Coastal Monks Seed Grant Application")}&body=${encodeURIComponent(`Hi Uday,
+
+I'm reaching out about the Coastal Monks $500 Seed Grant.
+
+1. What I'm hoping to start:
+[Your answer here]
+
+2. How $500 would help me begin:
+[Your answer here]
+
+3. What other support would make a difference:
+[Your answer here]
+
+Thank you for creating this opportunity.`)}`}
             />
 
             <PillarCard

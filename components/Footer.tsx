@@ -6,6 +6,7 @@ export default function Footer() {
     { label: "One Simple Wish", href: "https://www.onesimplewish.org/uday", target: "_blank", rel: "noopener noreferrer" },
     { label: "Rescue Mission", href: "https://www.rescuemission.org/", target: "_blank", rel: "noopener noreferrer" },
     { label: "Coastal Monks", href: "#coastal-monks" },
+    { label: "Connect with Uday", href: "https://www.linkedin.com/in/udaygupta/", target: "_blank", rel: "noopener noreferrer" },
     { label: "Contact", href: "mailto:me@uday.com" },
   ];
 

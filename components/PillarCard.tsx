@@ -5,7 +5,7 @@ interface PillarCardProps {
   tag: string;
   title: string;
   body: string;
-  icon: "person" | "heart" | "home";
+  icon: "person" | "heart" | "home" | "seedGrant";
   bullets?: string[];
   linkText?: string;
   linkHref?: string;
@@ -35,6 +35,13 @@ const PillarIcons = {
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-10 h-10 md:w-12 md:h-12">
       <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
       <polyline points="9 22 9 12 15 12 15 22" />
+    </svg>
+  ),
+  seedGrant: (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-10 h-10 md:w-12 md:h-12">
+      <rect x="3" y="6" width="18" height="12" rx="2" />
+      <path d="M20.84 10.61a3 3 0 0 0-4.24 0L12 15.17l-.6-.6a3 3 0 0 0-4.24 4.24l.6.6L12 23.65l4.24-4.24.6-.6a3 3 0 0 0 0-4.24z" transform="translate(0, -3) scale(0.5) translate(12, 12)" />
+      <circle cx="12" cy="11" r="2" />
     </svg>
   ),
 };
