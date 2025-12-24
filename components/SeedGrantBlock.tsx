@@ -6,11 +6,11 @@ import Section from "./shared/Section";
 export default function SeedGrantBlock() {
   // Properly encode mailto with pre-filled content
   const mailtoLink = `mailto:uday@coastalmonks.org?subject=${encodeURIComponent(
-    "Coastal Monks Seed Grant Application"
+    "Coastal Monks Love Loan Application"
   )}&body=${encodeURIComponent(
     `Hi Uday,
 
-I'm reaching out about the Coastal Monks $500 Seed Grant.
+I'm reaching out about the Coastal Monks $500 Love Loan.
 
 1. What I'm hoping to start:
 [Your answer here]
@@ -34,7 +34,7 @@ Thank you for creating this opportunity.`
 
         {/* Intro paragraph */}
         <p className="text-body text-center text-charcoal mb-12 max-w-content mx-auto leading-relaxed">
-          Meaningful things often begin with very little. We offer $500 seed grants to people starting something good.
+          Meaningful things often begin with very little. We offer $500 love loans to people starting something good.
         </p>
 
         {/* Prompt block */}
@@ -66,7 +66,7 @@ Thank you for creating this opportunity.`
         {/* CTA */}
         <div className="flex justify-center">
           <Button variant="primary" href={mailtoLink}>
-            Apply for a Seed Grant
+            Apply for a Love Loan
           </Button>
         </div>
       </Container>
