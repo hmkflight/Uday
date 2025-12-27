@@ -9,6 +9,7 @@ interface StoryBlockProps {
   linkHref?: string;
   linkTarget?: string;
   linkRel?: string;
+  linkEmphasized?: boolean;
   imageSrc?: string;
   imageAlt?: string;
 }
@@ -43,6 +44,7 @@ export default function StoryBlock({
   linkHref = "#",
   linkTarget,
   linkRel,
+  linkEmphasized = false,
   imageSrc,
   imageAlt = "",
 }: StoryBlockProps) {
@@ -89,7 +91,7 @@ export default function StoryBlock({
               href={linkHref}
               target={linkTarget}
               rel={linkRel}
-              className="inline-flex items-center gap-2 text-[15px] md:text-[16px] text-white hover:opacity-70 transition-opacity duration-200 min-h-[44px] font-medium"
+              className={`inline-flex items-center gap-2 text-[15px] md:text-[16px] text-white hover:opacity-70 transition-opacity duration-200 min-h-[44px] ${linkEmphasized ? 'font-semibold' : 'font-medium'}`}
             >
               {linkText}
               <svg className="w-4 h-4 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
