@@ -91,10 +91,10 @@ export default function StoryBlock({
               href={linkHref}
               target={linkTarget}
               rel={linkRel}
-              className={`inline-flex items-center gap-2 text-[15px] md:text-[16px] text-white hover:opacity-70 transition-opacity duration-200 min-h-[44px] ${linkEmphasized ? 'font-semibold' : 'font-medium'}`}
+              className={`inline-flex items-center gap-2 text-[15px] md:text-[16px] text-white hover:opacity-70 transition-opacity duration-200 min-h-[44px] ${linkEmphasized ? 'font-semibold underline decoration-1 underline-offset-4 decoration-white/40' : 'font-medium'}`}
             >
               {linkText}
-              <svg className="w-4 h-4 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className={`w-4 h-4 ${linkEmphasized ? 'opacity-90' : 'opacity-70'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </a>
