@@ -17,33 +17,10 @@ export default function EmailSignup() {
             Join Coastal Monks and we'll email you a $100 One Simple Wish gift card—so your first step helps someone right away.
           </p>
 
-          {/*
-            KIT EMBED PLACEHOLDER
-            =====================
-            When ready to integrate ConvertKit:
-            1. Replace the form below with Kit's embed code
-            2. Keep the max-w-md mx-auto wrapper for consistent width
-            3. Maintain mobile-first responsive behavior
-          */}
-
-          {/* Email form placeholder */}
-          <form className="max-w-md mx-auto mb-4">
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="flex-1 px-6 py-4 rounded-lg border-2 border-warmBeige focus:border-coastalTeal focus:outline-none transition-colors duration-200 text-[16px] text-charcoal placeholder:text-warmGray min-h-[44px] font-sans"
-                disabled
-              />
-              <button
-                type="submit"
-                className="px-8 py-4 rounded-lg font-medium bg-coastalTeal text-white hover:bg-opacity-95 transition-all duration-300 min-h-[44px] shadow-[0_2px_12px_rgba(0,0,0,0.04)] hover:shadow-[0_4px_20px_rgba(0,0,0,0.08)] font-sans whitespace-nowrap"
-                disabled
-              >
-                Join the circle
-              </button>
-            </div>
-          </form>
+          {/* Kit email signup form */}
+          <div className="max-w-md mx-auto mb-4">
+            <script async data-uid="92c3cf4c7d" src="https://uday-19.kit.com/92c3cf4c7d/index.js"></script>
+          </div>
 
           {/* Trust microcopy */}
           <p className="text-[13px] md:text-[14px] text-warmGray opacity-70 leading-relaxed">
