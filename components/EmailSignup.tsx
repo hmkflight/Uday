@@ -1,9 +1,45 @@
-import React from "react";
-import Script from "next/script";
+"use client";
+
+import React, { useEffect } from "react";
 import Container from "./shared/Container";
 import Section from "./shared/Section";
 
 export default function EmailSignup() {
+  useEffect(() => {
+    // Check if Kit script already exists
+    const existingScript = document.querySelector(
+      'script[src="https://uday-19.kit.com/92c3cf4c7d/index.js"]'
+    );
+
+    if (existingScript) {
+      console.log("Kit script already exists in DOM");
+      return;
+    }
+
+    // Create and inject the Kit script
+    const script = document.createElement("script");
+    script.src = "https://uday-19.kit.com/92c3cf4c7d/index.js";
+    script.async = true;
+    script.setAttribute("data-uid", "92c3cf4c7d");
+
+    script.onload = () => {
+      console.log("Kit script loaded successfully");
+    };
+
+    script.onerror = () => {
+      console.error("Kit script failed to load");
+    };
+
+    document.body.appendChild(script);
+    console.log("Kit script injected into DOM");
+
+    // Cleanup function
+    return () => {
+      // Optional: remove script on unmount if needed
+      // For Kit forms, typically you want to keep it loaded
+    };
+  }, []);
+
   return (
     <Section className="bg-sand">
       <Container maxWidth="content">
@@ -19,13 +55,7 @@ export default function EmailSignup() {
           </p>
 
           {/* Kit email signup form */}
-          <div id="kit-form-embed" className="max-w-md mx-auto mb-4">
-            <Script
-              src="https://uday-19.kit.com/92c3cf4c7d/index.js"
-              data-uid="92c3cf4c7d"
-              strategy="lazyOnload"
-            />
-          </div>
+          <div id="kit-form-embed" className="max-w-md mx-auto mb-4" />
 
           {/* Trust microcopy */}
           <p className="text-[13px] md:text-[14px] text-warmGray opacity-70 leading-relaxed">
