@@ -1,4 +1,5 @@
 import React from "react";
+import Script from "next/script";
 import Container from "./shared/Container";
 import Section from "./shared/Section";
 
@@ -18,8 +19,12 @@ export default function EmailSignup() {
           </p>
 
           {/* Kit email signup form */}
-          <div className="max-w-md mx-auto mb-4">
-            <script async data-uid="92c3cf4c7d" src="https://uday-19.kit.com/92c3cf4c7d/index.js"></script>
+          <div id="kit-form-embed" className="max-w-md mx-auto mb-4">
+            <Script
+              src="https://uday-19.kit.com/92c3cf4c7d/index.js"
+              data-uid="92c3cf4c7d"
+              strategy="lazyOnload"
+            />
           </div>
 
           {/* Trust microcopy */}
