@@ -6,13 +6,20 @@ import Section from "./shared/Section";
 
 export default function EmailSignup() {
   useEffect(() => {
-    // Check if Kit script already exists
-    const existingScript = document.querySelector(
+    // Get the container element
+    const container = document.getElementById("kit-form-embed");
+
+    if (!container) {
+      return;
+    }
+
+    // Check if script or form already exists in container
+    const existingScript = container.querySelector(
       'script[src="https://uday-19.kit.com/92c3cf4c7d/index.js"]'
     );
+    const existingForm = container.querySelector('[class*="formkit"]');
 
-    if (existingScript) {
-      console.log("Kit script already exists in DOM");
+    if (existingScript || existingForm) {
       return;
     }
 
@@ -22,22 +29,7 @@ export default function EmailSignup() {
     script.async = true;
     script.setAttribute("data-uid", "92c3cf4c7d");
 
-    script.onload = () => {
-      console.log("Kit script loaded successfully");
-    };
-
-    script.onerror = () => {
-      console.error("Kit script failed to load");
-    };
-
-    document.body.appendChild(script);
-    console.log("Kit script injected into DOM");
-
-    // Cleanup function
-    return () => {
-      // Optional: remove script on unmount if needed
-      // For Kit forms, typically you want to keep it loaded
-    };
+    container.appendChild(script);
   }, []);
 
   return (
