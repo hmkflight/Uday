@@ -85,16 +85,16 @@ export default function StoryBlock({
             {body}
           </p>
 
-          {/* Link with arrow */}
+          {/* Link button - light grey styling for visibility on video background */}
           {linkText && (
             <a
               href={linkHref}
               target={linkTarget}
               rel={linkRel}
-              className={`inline-flex items-center gap-2 text-[15px] md:text-[16px] text-white hover:opacity-70 transition-opacity duration-200 min-h-[44px] ${linkEmphasized ? 'font-semibold underline decoration-1 underline-offset-4 decoration-white/40' : 'font-medium'}`}
+              className={`inline-flex items-center gap-2 text-[15px] md:text-[16px] text-white bg-white/15 hover:bg-white/25 transition-all duration-200 min-h-[44px] px-5 py-2.5 rounded-lg border border-white/20 ${linkEmphasized ? 'font-semibold' : 'font-medium'}`}
             >
               {linkText}
-              <svg className={`w-4 h-4 ${linkEmphasized ? 'opacity-90' : 'opacity-70'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-4 h-4 opacity-90" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </a>
