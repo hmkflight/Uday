@@ -42,7 +42,7 @@ export default function VideoSection({
             left: 0,
             width: '100%',
             height: '100%',
-            filter: 'brightness(1.15) contrast(1.05)',
+            filter: 'brightness(1.08) contrast(0.98)',
           }}
           aria-hidden="true"
         >
@@ -50,12 +50,16 @@ export default function VideoSection({
         </video>
       </div>
 
-      {/* Overlay for readability */}
+      {/* Overlay for readability - directional gradient anchors text */}
       {useGradient ? (
         <div
           className="absolute inset-0"
           style={{
-            background: `linear-gradient(to bottom, rgba(0, 0, 0, ${overlayOpacity + 0.15}) 0%, rgba(0, 0, 0, ${overlayOpacity}) 100%)`,
+            background: `linear-gradient(to bottom,
+              rgba(0, 0, 0, ${overlayOpacity + 0.22}) 0%,
+              rgba(0, 0, 0, ${overlayOpacity + 0.12}) 35%,
+              rgba(0, 0, 0, ${overlayOpacity}) 70%,
+              rgba(0, 0, 0, ${overlayOpacity - 0.08}) 100%)`,
           }}
           aria-hidden="true"
         />

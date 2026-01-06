@@ -99,7 +99,7 @@ Thank you for creating this opportunity.`)}`}
 
       <VideoSection
         videoSrc="/videos/14937676_3840_2160_30fps.mp4"
-        overlayOpacity={0.38}
+        overlayOpacity={0.42}
         overlayColor="dark"
         useGradient={true}
       >
