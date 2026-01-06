@@ -42,6 +42,7 @@ export default function VideoSection({
             left: 0,
             width: '100%',
             height: '100%',
+            filter: 'brightness(1.15) contrast(1.05)',
           }}
           aria-hidden="true"
         >

@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <VideoSection
       videoSrc="/videos/14937676_3840_2160_30fps.mp4"
-      overlayOpacity={0.45}
+      overlayOpacity={0.38}
       overlayColor="dark"
       useGradient={true}
     >
