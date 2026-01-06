@@ -1,37 +1,8 @@
-"use client";
-
-import React, { useEffect } from "react";
+import React from "react";
 import Container from "./shared/Container";
 import Section from "./shared/Section";
 
 export default function EmailSignup() {
-  useEffect(() => {
-    // Get the container element
-    const container = document.getElementById("kit-form-embed");
-
-    if (!container) {
-      return;
-    }
-
-    // Check if script or form already exists in container
-    const existingScript = container.querySelector(
-      'script[src="https://uday-19.kit.com/92c3cf4c7d/index.js"]'
-    );
-    const existingForm = container.querySelector('[class*="formkit"]');
-
-    if (existingScript || existingForm) {
-      return;
-    }
-
-    // Create and inject the Kit script
-    const script = document.createElement("script");
-    script.src = "https://uday-19.kit.com/92c3cf4c7d/index.js";
-    script.async = true;
-    script.setAttribute("data-uid", "92c3cf4c7d");
-
-    container.appendChild(script);
-  }, []);
-
   return (
     <Section className="bg-sand">
       <Container maxWidth="content">
@@ -46,8 +17,24 @@ export default function EmailSignup() {
             Join Coastal Monks and we'll email you a $100 One Simple Wish gift card—so your first step helps someone right away.
           </p>
 
-          {/* Kit email signup form */}
-          <div id="kit-form-embed" className="max-w-md mx-auto mb-4" />
+          {/* Placeholder email form - ready for Mailchimp integration */}
+          <form className="max-w-md mx-auto mb-4" onSubmit={(e) => e.preventDefault()}>
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                className="flex-1 px-6 py-4 rounded-lg border-2 border-warmBeige focus:border-coastalTeal focus:outline-none transition-colors duration-200 text-[16px] text-charcoal placeholder:text-warmGray min-h-[44px] font-sans"
+                disabled
+              />
+              <button
+                type="submit"
+                className="px-8 py-4 rounded-lg font-medium bg-coastalTeal text-white hover:bg-opacity-95 transition-all duration-300 min-h-[44px] shadow-[0_2px_12px_rgba(0,0,0,0.04)] hover:shadow-[0_4px_20px_rgba(0,0,0,0.08)] font-sans whitespace-nowrap opacity-50 cursor-not-allowed"
+                disabled
+              >
+                Join the circle
+              </button>
+            </div>
+          </form>
 
           {/* Trust microcopy */}
           <p className="text-[13px] md:text-[14px] text-warmGray opacity-70 leading-relaxed">
