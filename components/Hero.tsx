@@ -16,7 +16,7 @@ export default function Hero() {
           {/* Logo */}
           <div className="flex justify-center mb-8 md:mb-12 lg:mb-14">
             <img
-              src="/images/Logos-removebg-preview.png"
+              src="/images/logo.png"
               alt="Coastal Monks Logo"
               className="h-20 md:h-28 lg:h-32 w-auto"
               style={{
