@@ -18,6 +18,10 @@ export default function Hero() {
             <img
               src="/images/logo.png"
               alt="Coastal Monks Logo"
+              width="660"
+              height="690"
+              loading="eager"
+              decoding="async"
               className="h-20 md:h-28 lg:h-32 w-auto"
               style={{
                 filter: 'drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3))'
