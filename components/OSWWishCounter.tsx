@@ -24,8 +24,15 @@ export default function OSWWishCounter() {
   }, []);
 
   return (
-    <p className="text-[14px] md:text-[15px] text-charcoal opacity-70 mb-6 md:mb-7 leading-relaxed">
-      Wishes granted so far: {isLoading || wishesGranted === null ? '—' : wishesGranted}
-    </p>
+    <div className="mt-6 mb-4 md:mt-7 md:mb-5">
+      <div className="border-l-2 border-coastalTeal bg-coastalTeal bg-opacity-5 rounded-md py-2 px-3">
+        <p className="text-[14px] md:text-[15px] text-charcoal leading-relaxed">
+          <span className="font-medium opacity-80">Wishes granted so far: </span>
+          <span className="font-semibold opacity-90">
+            {isLoading || wishesGranted === null ? '—' : wishesGranted}
+          </span>
+        </p>
+      </div>
+    </div>
   );
 }
