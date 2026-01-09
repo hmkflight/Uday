@@ -39,6 +39,8 @@ export default function Home() {
                 "Share how $500 would help you begin",
                 "Ask for any other support that would help",
               ]}
+              linkText="Hear from the first recipient"
+              linkHref="/recovery-stories"
               buttonText="Apply for a Love Loan"
               buttonHref={`mailto:uday@coastalmonks.org?subject=${encodeURIComponent("Coastal Monks Love Loan Application")}&body=${encodeURIComponent(`Hi Uday,
 
@@ -54,8 +56,6 @@ I'm reaching out about the Coastal Monks $500 Love Loan.
 [Your answer here]
 
 Thank you for creating this opportunity.`)}`}
-              secondaryButtonText="View the testimony"
-              secondaryButtonHref="/recovery-stories"
             />
 
             <PillarCard
