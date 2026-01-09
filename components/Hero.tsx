@@ -15,18 +15,20 @@ export default function Hero() {
         <Container>
           {/* Logo */}
           <div className="flex justify-center mb-8 md:mb-12 lg:mb-14">
-            <img
-              src="/images/logo.png"
-              alt="Coastal Monks Logo"
-              width="660"
-              height="690"
-              loading="eager"
-              decoding="async"
-              className="h-20 md:h-28 lg:h-32 w-auto"
-              style={{
-                filter: 'drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3))'
-              }}
-            />
+            <div className="rounded-xl bg-white bg-opacity-8 p-4 md:p-5 lg:p-6 backdrop-blur-sm">
+              <img
+                src="/images/logo.png"
+                alt="Coastal Monks Logo"
+                width="660"
+                height="690"
+                loading="eager"
+                decoding="async"
+                className="h-24 md:h-32 lg:h-36 w-auto"
+                style={{
+                  filter: 'brightness(1.08) drop-shadow(0 2px 6px rgba(0, 0, 0, 0.25))'
+                }}
+              />
+            </div>
           </div>
 
           {/* Main headline and subheadline */}
