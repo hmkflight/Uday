@@ -8,6 +8,7 @@ import EmailSignup from "@/components/EmailSignup";
 import CoastalMonksBlock from "@/components/CoastalMonksBlock";
 import Footer from "@/components/Footer";
 import VideoSection from "@/components/shared/VideoSection";
+import OSWWishCounter from "@/components/OSWWishCounter";
 
 export default function Home() {
   return (
@@ -60,6 +61,7 @@ Thank you for creating this opportunity.`)}`}
               icon="heart"
               title="Grant moments of joy that last"
               body="Help grant meaningful wishes for children and young people in foster care. Every wish becomes part of our shared impact."
+              wishCounter={<OSWWishCounter />}
               bullets={[
                 "Grant or sponsor a wish",
                 "Share a wish with your friends",

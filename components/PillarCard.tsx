@@ -16,6 +16,7 @@ interface PillarCardProps {
   buttonHref?: string;
   buttonTarget?: string;
   buttonRel?: string;
+  wishCounter?: React.ReactNode;
 }
 
 // Minimalist icon components
@@ -60,6 +61,7 @@ export default function PillarCard({
   buttonHref = "#",
   buttonTarget,
   buttonRel,
+  wishCounter,
 }: PillarCardProps) {
   return (
     <div className="group py-8 md:py-0 md:px-6 lg:px-8">
@@ -76,6 +78,9 @@ export default function PillarCard({
 
       {/* Body */}
       <p className="text-[16px] md:text-[17px] lg:text-[18px] text-charcoal mb-6 md:mb-8 leading-relaxed opacity-80 max-w-md">{body}</p>
+
+      {/* Optional wish counter */}
+      {wishCounter}
 
       {/* Bullets if provided */}
       {bullets && bullets.length > 0 && (
