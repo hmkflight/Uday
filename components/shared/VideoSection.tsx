@@ -56,10 +56,9 @@ export default function VideoSection({
           className="absolute inset-0"
           style={{
             background: `linear-gradient(to bottom,
-              rgba(0, 0, 0, ${overlayOpacity + 0.22}) 0%,
-              rgba(0, 0, 0, ${overlayOpacity + 0.12}) 35%,
-              rgba(0, 0, 0, ${overlayOpacity}) 70%,
-              rgba(0, 0, 0, ${overlayOpacity - 0.08}) 100%)`,
+              rgba(0, 0, 0, 0.45) 0%,
+              rgba(0, 0, 0, 0.22) 50%,
+              rgba(0, 0, 0, 0.05) 100%)`,
           }}
           aria-hidden="true"
         />
