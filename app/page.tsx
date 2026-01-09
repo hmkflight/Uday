@@ -54,6 +54,8 @@ I'm reaching out about the Coastal Monks $500 Love Loan.
 [Your answer here]
 
 Thank you for creating this opportunity.`)}`}
+              secondaryButtonText="View the testimony"
+              secondaryButtonHref="/recovery-stories"
             />
 
             <PillarCard

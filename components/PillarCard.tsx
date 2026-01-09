@@ -16,6 +16,10 @@ interface PillarCardProps {
   buttonHref?: string;
   buttonTarget?: string;
   buttonRel?: string;
+  secondaryButtonText?: string;
+  secondaryButtonHref?: string;
+  secondaryButtonTarget?: string;
+  secondaryButtonRel?: string;
   wishCounter?: React.ReactNode;
 }
 
@@ -61,6 +65,10 @@ export default function PillarCard({
   buttonHref = "#",
   buttonTarget,
   buttonRel,
+  secondaryButtonText,
+  secondaryButtonHref = "#",
+  secondaryButtonTarget,
+  secondaryButtonRel,
   wishCounter,
 }: PillarCardProps) {
   return (
@@ -132,6 +140,14 @@ export default function PillarCard({
         <div className="mt-2">
           <Button variant="primary" href={buttonHref} target={buttonTarget} rel={buttonRel}>
             {buttonText}
+          </Button>
+        </div>
+      )}
+
+      {secondaryButtonText && (
+        <div className="mt-3">
+          <Button variant="secondary" href={secondaryButtonHref} target={secondaryButtonTarget} rel={secondaryButtonRel}>
+            {secondaryButtonText}
           </Button>
         </div>
       )}
