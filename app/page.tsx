@@ -136,8 +136,10 @@ Thank you for creating this opportunity.`)}`}
               icon="shelter"
               title="A warm bed, a meal, and a new start"
               body="Behind every bed is a person with a name and a future. Your support helps someone take the first steps toward recovery."
-              linkText="Hear from the first recipient"
-              linkHref="/recovery-stories"
+              linkText="Visit Rescue Mission"
+              linkHref="https://www.rescuemission.org/"
+              linkTarget="_blank"
+              linkRel="noopener noreferrer"
               linkEmphasized={true}
             />
 
